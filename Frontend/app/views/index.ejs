@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include ./partials/head %>
+    </head>
+    <body>
+        <div class="header">        
+            <div class="container">
+                <div class="row">
+                    <img src="<%= getlinks_pic %>" alt="profile" class="img-circle profile_pic">
+                    <div class="col-md-8 col-md-offset-2">
+                    <% for(var i=0; i<4; i++) { %>
+                        <div class="col-md-3">
+                            <button class="btn btn-default btn-block btn-header" type="button">Link</button>
+                        </div>
+                    <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <h1>GetLinks</h1>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Eius omnis iste pariatur! Quo ratione eos accusantium adipisci deleniti!<br>
+                    Consequatur nostrum officia alias impedit fugit veritatis eligendi,<br>
+                    repellendus a totam dignissimos!
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <% for(var i=0; i<8; i++) { %>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="article">
+                            <div class="article-img">
+                                <a href="#"><img src="<%= getlinks_pic %>" alt="content" class="img-rounded img-responsive"></a>
+                            </div>
+                            <div class="article-body">
+                                <a href="#"><h1>GetLinks</h1></a>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor explicabo voluptatem culpa nemo, magnam maiores numquam soluta quae molestiae optio dolorum tempora vero earum suscipit! Ex praesentium iusto itaque blanditiis?
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <% for(var i=0; i<3; i++) { %>
+                    <div class="col-md-3">
+                        <div class="contact">
+                            <h3>Contact</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <% } %>
+                    <div class="col-md-3">
+                        <div class="contact">
+                            <h3>Contact</h3>
+                            <button class="btn btn-contact btn-facebook" type="button">
+                            <i class="fa fa-facebook" aria-hidden="true"></i></button>
+                            <button class="btn btn-contact btn-instagram" type="button">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></button>
+                            <button class="btn btn-contact btn-twitter" type="button">
+                            <i class="fa fa-twitter" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% include ./partials/script %>
+    </body>
+</html>

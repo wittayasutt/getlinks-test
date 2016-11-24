@@ -1,0 +1,102 @@
+$getlinks-color: #5AB1C5;
+$about-border: 6px solid ($getlinks-color + #111111);
+
+/* header */	
+
+.header {
+	margin: 40px auto;
+}
+
+.profile_pic {
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-header {
+	margin-top: 30px;
+	height: 40px;
+}
+
+/* about */
+
+.about {
+	background-color: $getlinks-color;
+	border-top: $about-border;
+	border-bottom: $about-border;
+	padding: 60px 0px;
+	text-align: center;
+	color: white;
+}
+
+.about h1 {
+	margin-top: 0px;
+}
+
+/* content */
+
+.content {
+	margin: 40px auto;
+}
+
+.article {
+	margin-top: 20px;
+}
+
+.article-img:hover {
+	opacity: 0.8;
+}
+
+.content a:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.article-img {
+		width: 30%;
+    	clear: left;
+		float: left;
+		margin-bottom: 20px;
+	}
+	.article-body {
+		width: 70%;
+		float: left;
+		padding-left: 20px;
+	}
+}
+
+/* footer */
+
+.footer {
+	background-color: $getlinks-color;
+	border-top: $about-border;
+	padding: 30px 0px;
+	color: white;
+}
+
+.btn-contact  {
+	width: 40px;
+	margin-right: 10px;
+	background-color: white;
+}
+
+.btn-contact:hover {
+	color: black;
+	border: 2px solid black;
+}
+
+.btn-facebook {
+	color: #4862A3;
+	border: 2px solid #4862A3;
+}
+
+.btn-instagram {
+	color: #8936B5;
+	border: 2px solid #8936B5;
+}
+
+.btn-twitter {
+	color: #41ABE1;
+	border: 2px solid #41ABE1;
+
+}
